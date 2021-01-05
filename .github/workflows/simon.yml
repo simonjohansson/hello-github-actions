@@ -1,0 +1,13 @@
+# Generated using halfpipe cli version 0.0.0-DEV
+name: simon
+"on":
+  push:
+    branches:
+    - main
+jobs:
+  test:
+    name: using a docker action
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
